@@ -121,7 +121,7 @@ const MapSection = () => {
       {/* Mobile simplified content */}
       <div className="block sm:hidden w-full animated-gradient-bg py-16 px-4 text-center text-white space-y-6">
         <h2 className="text-xl font-bold">
-          Where did your <span className="text-emerald-200">rice</span> come from?
+          Where did your <span className="text-yellow-300">rice</span> come from?
         </h2>
         <img src="/map-removebg-preview.png" alt="Map Illustration" className="w-3/4 max-w-xs mx-auto" />
         <h2 className="text-2xl font-bold mb-4">
