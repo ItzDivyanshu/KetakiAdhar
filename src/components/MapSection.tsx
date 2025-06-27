@@ -38,10 +38,10 @@ const MapSection = () => {
   const stickyHeight = useTransform(scrollYProgress, [0.8, 1], ['90vh', '50vh']);
 
   return (
-    <section ref={targetRef} className="relative h-[230vh] bg-white">
+    <section ref={targetRef} className="relative bg-white sm:h-[230vh] mt-12 sm:mt-0 mb-24">
       <SvgMask />
       <motion.div
-        className="sticky top-0 z-[60] block pointer-events-none"
+        className="hidden sm:block sticky top-0 z-[60] pointer-events-none"
         style={{ height: stickyHeight }}
       >  
         {/* h-screen */}
@@ -52,7 +52,7 @@ const MapSection = () => {
             style={{ opacity: initialLayoutOpacity }}
           >
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center px-4 sm:whitespace-nowrap">
-              Where did your <span className="text-primary-600">rice</span> come from?
+              Where did your <span className="text-emerald-600">rice</span> come from?
             </h2>
             <div className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px]" style={{ clipPath: 'url(#logo-mask)' }}>
               <div
@@ -117,6 +117,20 @@ const MapSection = () => {
           </motion.div>
         </div>
       </motion.div>
+
+      {/* Mobile simplified content */}
+      <div className="block sm:hidden w-full animated-gradient-bg py-16 px-4 text-center text-white space-y-6">
+        <h2 className="text-xl font-bold">
+          Where did your <span className="text-emerald-200">rice</span> come from?
+        </h2>
+        <img src="/map-removebg-preview.png" alt="Map Illustration" className="w-3/4 max-w-xs mx-auto" />
+        <h2 className="text-2xl font-bold mb-4">
+          <span className="text-yellow-300">Punjab's</span> Golden Fields
+        </h2>
+        <p className="text-lg max-w-md mx-auto">
+          Where <span className="font-bold text-yellow-300">40% of India's rice</span> is cultivated with generations of farming expertise
+        </p>
+      </div>
     </section>
   );
 };

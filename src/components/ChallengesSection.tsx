@@ -25,7 +25,7 @@ const ChallengesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-2 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
