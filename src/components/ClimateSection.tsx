@@ -7,8 +7,7 @@ const ClimateSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Split screen layout */}
         <div className="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
-          {/* Left side - Green, healthy farm */}
-          <div className="relative">
+          {/* <div className="relative">
             <div 
               className="h-96 lg:h-full bg-cover bg-center"
               style={{
@@ -23,10 +22,10 @@ const ClimateSection = () => {
                 <p className="text-primary-100">When nature cooperates</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Right side - Dried, cracked field */}
-          <div className="relative">
+          {/* <div className="relative">
             <div 
               className="h-96 lg:h-full bg-cover bg-center"
               style={{
@@ -41,7 +40,7 @@ const ClimateSection = () => {
                 <p className="text-red-100">When climate strikes</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Content section */}
