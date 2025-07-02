@@ -84,14 +84,14 @@ const ClimateSection = () => {
           {/* Call to action */}
           <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8">
             <h3 className="text-2xl font-bold mb-4">
-              At Ketaki Adhar, we don't just support farmers - we stand with them.
+            Ketaki Adhar provides daily weather updates to farmers, helping them make smarter decisions about sowing, irrigation, and harvest.
             </h3>
             <p className="text-primary-100 text-lg mb-6">
-              We believe in respect over sympathy, and long-term solutions over short-term aid.
+            This reduces risk in an unpredictable climate.
             </p>
-            <button className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+            {/* <button className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
               Learn About Our Solutions
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

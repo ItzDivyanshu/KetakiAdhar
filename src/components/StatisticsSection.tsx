@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Users, TrendingUp } from 'lucide-react';
+import { span } from 'framer-motion/client';
 
 const StatisticsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,10 +25,10 @@ const StatisticsSection = () => {
   }, []);
 
   useEffect(() => {
-    if (isVisible && count < 45.76) {
+    if (isVisible && count < 21000) {
       const timer = setTimeout(() => {
-        setCount(prev => Math.min(prev + 0.8, 45.76));
-      }, 50);
+        setCount(prev => Math.min(prev + 200, 21000));
+      }, 20);
       return () => clearTimeout(timer);
     }
   }, [isVisible, count]);
@@ -40,14 +41,12 @@ const StatisticsSection = () => {
           <div className="space-y-4 animate-slide-in-left">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                Nearly Half of India's Workforce are
-                <span className="text-primary-600"> Farmers</span>
+              <span className="text-primary-600"> 21,000+ </span>
+               Farmers Empowered by 
+              <span className="text-primary-600"> Ketaki Adhar</span>
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                More than 45.76% of India's working population is engaged in agriculture.
-              </p>
-              <p className="text-lg text-gray-700 font-medium">
-                Every second working Indian contributes directly to the food you eat.
+              Over 21,000 farmers across India have received support through seeds, fertilizers, organic farming education, soil testing, tree plantation, and healthcare.
               </p>
             </div>
 
@@ -66,16 +65,16 @@ const StatisticsSection = () => {
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative">
               {/* Background circle */}
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center relative overflow-hidden">
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center relative overflow-hidden p-4">
                 <div className="absolute inset-4 rounded-full bg-white shadow-inner"></div>
                 
                 {/* Counter */}
-                <div className="relative z-10 text-center">
-                  <div className="text-6xl md:text-7xl font-bold text-primary-600 mb-4">
-                    {count.toFixed(1)}%
+                <div className="relative z-10 text-center px-4">
+                  <div className="text-5xl md:text-6xl font-bold text-primary-600 leading-tight">
+                    {count.toLocaleString()}+
                   </div>
                   <div className="text-gray-700 font-medium text-lg">
-                    of India's Workforce
+                    Farmers Empowered
                   </div>
                   <div className="flex items-center justify-center mt-4">
                     <TrendingUp className="w-5 h-5 text-primary-500 mr-2" />

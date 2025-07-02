@@ -10,12 +10,12 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { label: 'About Us', href: '#about' },
-    { label: 'Our Impact', href: '#impact' },
-    { label: 'Programs', href: '#programs' },
-    { label: 'Get Involved', href: '#volunteer' },
-    { label: 'Stories', href: '#stories' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Our Story', href: '/our-story' },
+    { label: 'Career', href: '/careers' },
+    { label: 'Why Farmers Matter', href: '#programs' },
+    { label: 'Our Initiatives', href: '#volunteer' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'Contact Us', href: '/contact' },
   ];
 
   const supportLinks = [
@@ -97,15 +97,10 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-primary-400 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400">
-                    Pune Maharashtra,<br />
+                    Mahatma Gandhi road, Mumbai,<br />
                     India
                   </p>
                 </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-primary-400" />
-                <span className="text-gray-400">+91 1234567890</span>
               </div>
               
               <div className="flex items-center space-x-3">

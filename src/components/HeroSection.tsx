@@ -39,11 +39,14 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 text-center px-4 lg:px-8 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 animate-slide-up">
-          <span className="block">Why Farmers Are</span>
+          <span className="block">How does</span>
           <span className="block bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">
-            the Foundation
+            Ketaki Adhar
           </span>
-          <span className="block">of India</span>
+          <span className="block">Helps Farmers</span>
+          <span className="block bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">
+            Grow and Thrive
+          </span>
         </h1>
         
         <div className="mt-16 animate-bounce-subtle">

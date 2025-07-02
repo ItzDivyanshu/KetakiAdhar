@@ -38,7 +38,7 @@ const MapSection = () => {
   const stickyHeight = useTransform(scrollYProgress, [0.8, 1], ['90vh', '50vh']);
 
   return (
-    <section ref={targetRef} className="relative bg-white sm:h-[230vh] mt-12 sm:mt-0 mb-24">
+    <section ref={targetRef} className="relative bg-white sm:h-[230vh] mt-12 sm:mt-0">
       <SvgMask />
       <motion.div
         className="hidden sm:block sticky top-0 z-[60] pointer-events-none"
@@ -51,8 +51,8 @@ const MapSection = () => {
             className="absolute inset-0 flex flex-col items-center justify-center pt-4 gap-8"
             style={{ opacity: initialLayoutOpacity }}
           >
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center px-4 sm:whitespace-nowrap">
-              Where did your <span className="text-emerald-600">rice</span> come from?
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center px-4">
+              How many states did <span className="text-emerald-600">Ketaki Adhar's</span> mission of farmer empowerment reach?
             </h2>
             <div className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px]" style={{ clipPath: 'url(#logo-mask)' }}>
               <div
@@ -98,20 +98,18 @@ const MapSection = () => {
               />
               <div className="text-white">
                 <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 text-center sm:text-left">
-  <span className="text-yellow-300">Punjab's</span> Golden
-  <span className="inline-block relative">
-    <span className="relative z-10">Fields</span>
-    <span className="absolute bottom-2 left-0 w-full h-3 bg-yellow-500/30 -rotate-1 transform -skew-x-6" />
-  </span>
-</h2>
-<p className="text-lg sm:text-xl md:text-2xl max-w-2xl text-center sm:text-left">
-  Where <span className="font-bold text-yellow-300">40% of India's rice</span> is cultivated with
-  <span className="relative inline-block mx-1">
-    <span className="relative z-10">generations</span>
-    <span className="absolute bottom-0 left-0 w-full h-2 bg-green-600/30 -rotate-1" />
-  </span>
-  of farming expertise
-</p>
+                  Empowering 
+                  <span className="text-yellow-300"> Farmers Across India</span>
+                </h2>
+                <p className="text-lg sm:text-xl md:text-2xl max-w-2xl text-center sm:text-left">
+                  Ketaki Adhar has empowered over  
+                  <span className="font-bold text-yellow-300"> 21,000 farmers</span>
+                  <span className="relative inline-block mx-1">
+                    <span className="relative z-10">across more than </span>
+                    <span className="absolute bottom-0 left-0 w-full h-2 bg-green-600/30 -rotate-1" />
+                  </span>
+                  <span className="font-bold text-yellow-300">10 Indian states</span>
+                </p>
               </div>
             </motion.div>
           </motion.div>
@@ -119,17 +117,22 @@ const MapSection = () => {
       </motion.div>
 
       {/* Mobile simplified content */}
-      <div className="block sm:hidden w-full animated-gradient-bg py-16 px-4 text-center text-white space-y-6">
-        <h2 className="text-xl font-bold">
-          Where did your <span className="text-yellow-300">rice</span> come from?
-        </h2>
-        <img src="/map-removebg-preview.png" alt="Map Illustration" className="w-3/4 max-w-xs mx-auto" />
-        <h2 className="text-2xl font-bold mb-4">
-          <span className="text-yellow-300">Punjab's</span> Golden Fields
-        </h2>
-        <p className="text-lg max-w-md mx-auto">
-          Where <span className="font-bold text-yellow-300">40% of India's rice</span> is cultivated with generations of farming expertise
-        </p>
+      <div className="block sm:hidden w-full animated-gradient-bg py-16 px-6 text-center text-white">
+        <div className="max-w-2xl mx-auto space-y-8">
+          <h2 className="text-3xl font-bold mb-6">
+            Empowering <span className="text-yellow-300">Farmers Across India</span>
+          </h2>
+          <img 
+            src="/map-removebg-preview.png" 
+            alt="Map of India showing Ketaki Adhar's reach" 
+            className="w-full max-w-md mx-auto" 
+          />
+          <p className="text-xl leading-relaxed">
+            Ketaki Adhar has empowered over{' '}
+            <span className="font-bold text-yellow-300">21,000 farmers</span> across{' '}
+            <span className="font-bold text-yellow-300">10 Indian states</span>
+          </p>
+        </div>
       </div>
     </section>
   );

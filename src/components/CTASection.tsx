@@ -14,9 +14,9 @@ const CTASection = () => {
     },
     {
       icon: HandHeart,
-      title: "Donate Now",
+      title: "Show Your Support To Farmers",
       description: "Your contribution directly supports farmers in need and sustainable agriculture",
-      buttonText: "Make a Donation",
+      buttonText: "Support Farmers",
       color: "from-accent-500 to-accent-600",
       bgColor: "bg-accent-50",
       hoverColor: "hover:bg-accent-100"
@@ -33,7 +33,7 @@ const CTASection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-white via-primary-25 to-secondary-25">
+    <section className="py-1 bg-gradient-to-br from-white via-primary-25 to-secondary-25">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

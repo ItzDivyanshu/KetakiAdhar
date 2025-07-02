@@ -58,27 +58,29 @@ const RealHeroSection = () => {
           </div>
         </div>
 
-        {/* Bottom section with appreciation */}
-        <div className="text-center bg-gradient-to-r from-primary-50 to-secondary-50 rounded-3xl p-12">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Every Grain Tells a Story
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              From dawn till dusk, through seasons of plenty and scarcity, farmers work tirelessly to ensure we never go hungry. Their hands shape not just crops, but the foundation of our civilization.
-            </p>
-            <div className="flex justify-center space-x-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary-600">600M+</div>
-                <div className="text-gray-600">Farmers in India</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-secondary-600">365</div>
-                <div className="text-gray-600">Days of Hard Work</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-accent-600">∞</div>
-                <div className="text-gray-600">Dedication</div>
+        {/* Every Grain Tells a Story Section */}
+        <div className="mt-16">
+          <div className="text-center bg-gradient-to-r from-primary-50 to-secondary-50 rounded-3xl p-12">
+            <div className="max-w-3xl mx-auto">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                Every Grain Tells a Story
+              </h3>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                From dawn till dusk, through seasons of plenty and scarcity, farmers work tirelessly to ensure we never go hungry. Their hands shape not just crops, but the foundation of our civilization.
+              </p>
+              <div className="flex justify-center space-x-8 text-center">
+                <div>
+                  <div className="text-3xl font-bold text-primary-600">600M+</div>
+                  <div className="text-gray-600">Farmers in India</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-secondary-600">365</div>
+                  <div className="text-gray-600">Days of Hard Work</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-accent-600">∞</div>
+                  <div className="text-gray-600">Dedication</div>
+                </div>
               </div>
             </div>
           </div>

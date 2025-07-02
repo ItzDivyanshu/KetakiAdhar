@@ -1,39 +1,39 @@
 
 
-const ChallengesSection = () => {
+const SupportArea = () => {
   const challenges = [
     {
-      title: "Unpredictable Rain",
-      detail: "Climate change has made weather patterns increasingly erratic. A single unexpected storm or drought can wipe out an entire season's investment.",
-      image: "/rain.avif"
+      title: "Seed Distribution",
+      detail: "We provide access to high-quality seeds that help farmers achieve better yield, improve crop health, and strengthen food security. All of this is offered free of cost to the farmer.",
+      image: "/seed.png"
     },
     {
-      title: "Pests and Crop Diseases",
-      detail: "New pests and diseases emerge constantly, often requiring expensive treatments that small farmers cannot afford.",
-      image: "/pests.avif"
+      title: "Soil Testing",
+      detail: "Healthy soil is the foundation of a good harvest. We conduct regular soil tests and offer practical guidance on improving fertility through natural and sustainable methods.",
+      image: "/soil_test.png"
     },
     {
-      title: "Debt Pressure",
-      detail: "Most farmers operate on borrowed money for seeds, fertilizers, and equipment. When crops fail, debt becomes overwhelming.",
-      image: "/debtPressure.png"
+      title: "Medical Assistance",
+      detail: "Through our rural medical camps, we bring essential healthcare to farmers and their families, especially in areas where medical facilities are hard to reach.",
+      image: "/medical.png"
     },
     {
-      title: "Health Risks",
-      detail: "Physical strain, exposure to chemicals, and lack of healthcare access create serious health challenges for farming families.",
-      image: "/healthrisk.png"
+      title: "Daily Weather Updates",
+      detail: "We provide timely and accurate weather reports that help farmers make informed decisions about sowing, irrigation, and harvesting. This reduces risk and protects their crops.",
+      image: "/weather.png"
     }
   ];
 
   return (
-    <section className="py-10 bg-gray-50">
+    <section className="py-8 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            What does a farmer face in
-            <span className="text-primary-600"> one season?</span>
+           Our Core 
+            <span className="text-primary-600"> Support Areas</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-           Behind every harvest lies a story of resilience against countless challenges
+          Cultivating Success: The Fundamental Cornerstones of Our Support
           </p>
         </div>
 
@@ -70,4 +70,4 @@ const ChallengesSection = () => {
   );
 };
 
-export default ChallengesSection;
+export default SupportArea;
